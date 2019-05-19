@@ -40,3 +40,18 @@ Processing by PostsController#show as HTML
   [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered posts/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 27ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+Started GET "/posts/new" for ::1 at 2019-05-19 19:25:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 317ms (Views: 304.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for ::1 at 2019-05-19 19:26:23 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9KGvNvifkhKP7iAPNu23v0WCxqX1EH6JNUPY1TpHTnYQlvfJjvXNmErEOhqVjE5os4rOXsuEGO2rysjVIS9YA==", "title"=>"Lisa", "description"=>"coder", "commit"=>"Submit Post"}
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 762095ms (ActiveRecord: 0.0ms)
+
+
